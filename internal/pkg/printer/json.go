@@ -32,7 +32,7 @@ func NewJSONPrinter() (ResultPrinter, error) {
 
 // Print the result.
 func (jp *JSONPrinter) Print(result interface{}) error {
-	res, err := json.Marshal(result)
+	res, err := json.MarshalIndent(result, "", "\t")
 	if err == nil {
 		fmt.Println(string(res))
 	}

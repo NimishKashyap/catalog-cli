@@ -109,9 +109,9 @@ var listCmd = &cobra.Command{
 	},
 }
 
-var catalogSummaryCmdLongHelp = `Get te catalog summary. # Namespaces, # Applications and # Tags`
+var catalogSummaryCmdLongHelp = `Get the catalog summary. # Namespaces, # Applications and # Tags`
 
-var catalogSummaryCmdShortHelp = `Get te catalog summary.`
+var catalogSummaryCmdShortHelp = `Get the catalog summary.`
 
 var summaryCmd = &cobra.Command{
 	Use:     "summary",
